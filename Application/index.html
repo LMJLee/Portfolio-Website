@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<head>
+        <link rel="stylesheet" type="text/css" href="../static/styles.css">
+        <script defer src="../static/index.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/768ca9f840.js" crossorigin="anonymous"></script>
+<html>
+  <body>
+
+    <!------------------------ NAVBAR -------------------------->
+    <header class="navbar-fixed-top">
+      <nav id="navbar">
+        <div class="nav-links">
+          <ul id="navCol">
+            <li><a class="navbar-transition navColor" href="#home">home</a></li>
+            <li><a class="navbar-transition navColor" href="#portfolio">portfolio</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <!------------------------ home -------------------------->
+
+    <section class="home" id="home">
+      <div class="container-me">
+
+        <div class="container-image">
+          <img src="../images/me2.jpg">
+        </div>
+
+        <div class="container-me-title">
+          <h1>software developer</h1>
+        </div>
+
+
+        <div class="hello">
+          <h2>Hello</h2>
+          <h3>안녕하세요</h3>
+          <h4>Hola</h4>
+        </div>
+
+        <div class="CV">
+          <a href="/CV.pdf" download="My CV" class="cv-btn">My CV</a>
+        </div>
+
+        <div class="social-media" role="group">
+
+          <div class="linked">
+            <a href="https://www.linkedin.com/in/lukemjlee" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+
+          <div class="insta">
+            <a href="https://www.instagram.com/mjaeart/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+
+          <div class="github">
+            <a href="https://github.com/LMJLee" target="_blank">
+                <i class="fa-brands fa-square-github"></i>
+            </a>
+
+          </div>
+
+          <div class="link">
+            <a target="_blank">
+                <i onclick="CopyEmail('LukeMJLee@outlook.com')" class="fa fa-clone" aria-hidden="true"></i>
+            </a>
+              <span class="hovertext">my email address!</span>
+          </div>
+
+        </div>
+
+        <div class="arrow-div">
+          <a href="#portfolio" >
+            <div class="arrow bounce"></div>
+          </a>
+        </div>
+
+      </div>
+
+
+
+
+
+
+    </section>
+
+
+
+      <section class="portfolio" id="portfolio">
+
+          <div class="portfolio-title">
+            <h1>portfolio</h1>
+          </div>
+
+
+          <div class="container">
+
+
+
+            <!-- START OF BOX 1 -->
+
+            <div class="portfolio-box">
+
+              <div class="portfolio-img">
+                <img src="../images/math.PNG">
+              </div>
+
+              <div class="box-row">
+
+                <div class="box-title">
+                  <h1>Math Quiz</h1>
+                </div>
+
+                <div class="button-type">
+
+                  <div class="html">
+                    <i class="fa fa-html5" aria-hidden="true"></i>
+                  </div>
+
+                  <div class="java">
+                    <i class="fa-brands fa-square-js"></i>
+                  </div>
+
+                  <div class="python">
+                    <i class="fa-brands fa-python"></i>
+                  </div>
+
+                </div>
+                <!-- END OF BOX-ROW -->
+
+              </div>
+
+              <!-- END OF PORTFOLIO-ROW -->
+
+
+
+              <div class="box-text">
+                <p>A web application that allows users to complete a math quiz and also save their scores to a SQL table.</p>
+              </div>
+
+              <div class="view-buttons">
+
+                <div class="github">
+
+                  <div class="github-button">
+                    <a href="https://github.com/LMJLee/Math-Quiz-II" target="_blank">
+                      <i class="fa-brands fa-square-github"></i>
+                    </a>
+
+                    <a href="https://github.com/LMJLee/Math-Quiz-II" target="_blank">
+                      <span class="span-view">view code</span>
+                    </a>
+
+                  </div>
+
+                </div>
+
+                <!-- END OF GITHUB -->
+
+                <div class="youtube">
+
+                  <div class="youtube-button">
+                    <a href="https://www.youtube.com/watch?v=b_pAIjZhVdk" target="_blank">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=b_pAIjZhVdk" target="_blank">
+                      <span class="span-view">view demo</span>
+                    </a>
+
+                  </div>
+
+                </div>
+
+                <!-- END OF YOUTUBE CLASS -->
+
+              </div>
+
+              <!-- END OF VIEWBUTTONS -->
+
+            </div>
+
+            <!-- END OF BOX 1 -->
+
+            <!-- START OF BOX 2 -->
+
+            <div class="portfolio-box">
+
+              <div class="portfolio-img">
+                <img src="../images/blog.PNG">
+              </div>
+
+              <div class="box-row">
+
+                <div class="box-title">
+                  <h1>Mock Blog</h1>
+                </div>
+
+                <div class="button-type1">
+                  <div class="html">
+                    <i class="fa fa-html5" aria-hidden="true"></i>
+                  </div>
+
+                  <div class="java">
+                    <i class="fa-brands fa-square-js"></i>
+                  </div>
+
+                </div>
+
+
+              </div>
+
+              <!-- END OF BOX-TITLE -->
+
+              <div class="box-text">
+                <p>A website that consists of mock film reviews, dynamic scaling as well an "about" page for the author.</p>
+              </div>
+
+              <div class="view-buttons">
+
+                <div class="github">
+
+                  <div class="github-button">
+                    <a href="https://github.com/LMJLee/mock-blog" target="_blank">
+                      <i class="fa-brands fa-square-github"></i>
+                    </a>
+
+                    <a href="https://github.com/LMJLee/mock-blog" target="_blank">
+                      <span class="span-view">view code</span>
+                    </a>
+
+                  </div>
+
+                </div>
+
+                <!-- END OF GITHUB -->
+
+                <div class="youtube">
+
+                  <div class="youtube-button">
+                    <a href="https://www.youtube.com/watch?v=52ccXEOuuJ4" target="_blank">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=52ccXEOuuJ4" target="_blank">
+                      <span class="span-view">view demo</span>
+                    </a>
+
+                  </div>
+
+                </div>
+
+                <!-- END OF YOUTUBE CLASS -->
+
+              </div>
+
+              <!-- END OF VIEWBUTTONS -->
+
+            </div>
+
+            <!-- END OF BOX 2 -->
+
+          </div>
+
+      </section>
+
+</body>
+</html>
+</head>

@@ -1,0 +1,853 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F6F5F1;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+
+/* -------------------------------------- N A V I G A T I O N ------------------------------------------------ */
+
+nav {
+    display: flex;
+    padding: 1% 0%;
+    right: 5%;
+    align-items: right;
+    position: fixed;
+    z-index: 1000;
+}
+
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #2F2E2A;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.navbar-transition {
+    transition: color 0.25s ease;
+}
+
+
+.nav-links ul li a.navbar-transition::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: currentColor;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li a.navbar-transition:hover::after {
+    width: 100%;
+}
+
+/* TEST */
+
+.test {
+    text-align: center;
+
+    border: 5px solid red;
+}
+
+
+
+.image img {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.image {
+    max-width: 260px;
+    height: auto;
+}
+
+/* -------------------------------------- H O M E  C O N T A I N E R ------------------------------------------------ */
+.container-me {
+    color: #2F2E2A;
+    text-align: center;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-image {
+    max-width: 260px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container-image img {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.container-me-title {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+
+.container-me-title h1{
+
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+
+.hello{
+    gap: 0.2rem;
+    background: #F6F5F1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+
+}
+
+.hello h2{
+    font-size: 2.8rem;
+}
+
+.hello h3{
+    font-size: 1.8rem;
+}
+
+.hello h4{
+    font-size: 1.6rem;
+}
+
+.cv-btn{
+    text-decoration: none;
+    color: #2F2E2A;
+    border: 1px solid #2F2E2A;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: transparent;
+    cursor: pointer;
+    padding-bottom: 1rem;
+    margin-top: -1rem;
+}
+
+.cv-btn:hover{
+    border: 1px solid #F6F5F1;
+    background: #F6F5F1;
+    transition: 0.5s;
+    color: #2F2E2A;
+}
+
+nav .fa{
+    display: none;
+}
+
+p{
+    color: #2F2E2A;
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 22px;
+    padding: 1rem;
+
+}
+
+.about-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+
+.CV {
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+
+.social-media {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.email {
+    left: 50%;
+    margin-top: -2px;
+}
+
+.social-media a i.fab.fa-instagram {
+    color: #2F2E2A;
+    font-size: 35px;
+}
+
+.social-media a i.fab.fa-instagram:hover {
+    color: #6b6868;
+    transition: color 0.1s ease;
+    }
+
+.social-media a i.fa-brands.fa-linkedin {
+    color: #2F2E2A;
+    font-size: 35px;
+}
+
+.social-media a i.fa-brands.fa-linkedin:hover {
+    color: #6b6868;
+    transition: color 0.1s ease;
+    }
+
+.social-media a i.fa-brands.fa-square-github {
+    color: #2F2E2A;
+    font-size: 35px;
+}
+
+.social-media a i.fa-brands.fa-square-github:hover {
+    color: #6b6868;
+    transition: color 0.1s ease;
+    }
+
+.social-media .link i.fa.fa-clone {
+    color: #2F2E2A;
+    font-size: 33px;
+}
+
+.social-media .link i.fa.fa-clone:hover  {
+    color: #6b6868;
+    transition: color 0.1s ease;
+}
+
+.link {
+    position: relative;
+}
+
+.link a {
+    display: block;
+}
+
+.link span {
+    font-size: 0.75rem;
+}
+
+.link .hovertext {
+    visibility: hidden;
+    width: 135px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.link:hover .hovertext {
+    visibility: visible;
+}
+
+/* -------------------------------------- A R R O W ------------------------------------------------ */
+
+.arrow-div {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow
+{
+    width: 40px;
+    height: 40px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
+    background-size: contain;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
+/* -------------------------------------- P O R T F O L I O ------------------------------------------------ */
+
+.portfolio {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #3f4559;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+
+.portfolio-title {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.portfolio-title h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    gap: 5rem;
+    background-color:#3f4559;
+}
+
+
+.portfolio-box{
+    max-width: 600px;
+    height: auto;
+    background-color:#3f4559;
+    margin-top: 20px;
+}
+
+.box-row {
+    display: flex;
+    align-items: center;
+}
+
+.box-title h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: -5px;
+    white-space: nowrap;
+}
+
+.box-text {
+    display: flex;
+
+
+}
+
+.box-text p {
+    color: #e3e3e3;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0px;
+    margin-left: -15px;
+}
+
+.portfolio-img {
+    max-width: 600px;
+    height: auto;
+    padding-bottom: 0.5rem;
+}
+
+.portfolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+.button-type {
+    margin-left: 20rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.button-type1 {
+    margin-left: 22.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.box-title,
+.java,
+.python,
+.html {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+.html i.fa.fa-html5 {
+    color: #ed77c2;
+    font-size: 2.1rem;
+}
+
+.html i.fa.fa-html5:hover {
+    color: #fc8dd4;
+    transition: color 0.1s ease;
+}
+
+.java i.fa-brands.fa-square-js {
+    color: #ebd254;
+    font-size: 2.1rem;
+}
+
+.java i.fa-brands.fa-square-js:hover {
+    color: #fce677;
+    transition: color 0.1s ease;
+}
+
+.python i.fa-brands.fa-python {
+    color:
+    #e6e6e6
+    ;
+    font-size: 2.1rem;
+}
+
+.python i.fa-brands.fa-python:hover {
+    color: #ffffff;
+    transition: color 0.1s ease;
+}
+
+
+.view-buttons {
+    margin-top: -5px;
+    display: flex;
+}
+
+.view-buttons a {
+    text-decoration: none;
+}
+
+.github {
+    display:inline-block;
+    vertical-align:middle;
+
+}
+
+.youtube {
+    margin-left: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+.span-view{
+    color: #d1d1d1;
+    font-size: 1.1rem;
+    font-weight: 300;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+}
+
+.span-view:hover {
+    color: #ffffff;
+    transition: color 0.1s ease;
+}
+
+
+.github-button a i.fa-brands.fa-square-github {
+    color: #d1d1d1;
+    font-size: 1.2rem;;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.github-button a i.fa-brands.fa-square-github:hover {
+    color: #ffffff;
+    transition: color 0.1s ease;
+}
+
+.youtube-button a i.fa-brands.fa-youtube{
+    color: #d1d1d1;
+    font-size: 1.4rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.youtube-button a i.fa-brands.fa-youtube:hover {
+    color: #ffffff;
+    transition: color 0.1s ease;
+}
+
+
+/* ----------------------------------------S C A L I N G----------------------------------------------------*/
+
+@media only screen and (max-width: 1399px) {
+
+    .home {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .portfolio {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+
+
+    .hello h2{
+        font-size: 2.5rem;
+    }
+
+    .hello h3{
+        font-size: 1.6rem;
+    }
+
+    .hello h4{
+        font-size: 1.4rem;
+    }
+
+    .CV {
+        padding-top: 0.8rem;
+    }
+
+    .container-me .profilePic img{
+        width: 240px;
+        height: 240px;
+    }
+
+    .container-me h1{
+        font-size: 1.5rem;
+    }
+
+    .social-media {
+        gap: 1.2rem;
+    }
+
+    .social-media a i.fab.fa-instagram,
+    .social-media a i.fa-brands.fa-linkedin,
+    .social-media a i.fa-brands.fa-square-github {
+        font-size: 30px;
+    }
+
+    .social-media .link i.fa.fa-clone {
+        font-size: 27.5px;
+    }
+
+    .container {
+        gap: 3rem;
+    }
+
+    .portfolio-title {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .home {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .portfolio {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 850px) {
+
+    .home {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .portfolio {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 750px) {
+
+    .home {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .portfolio {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    nav {
+        right: 3%;
+    }
+
+    .nav-links ul li a {
+        font-size: 1.1rem;
+    }
+
+
+    .portfolio-title {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+
+    .portfolio-title h1 {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        gap: 2rem;
+    }
+
+    .portfolio-box{
+        max-width: 480px;
+    }
+
+    .button-type {
+        margin-left: 13.25rem;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+    }
+
+    .button-type1 {
+        margin-left: 15.25rem;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+    }
+
+
+    .box-title h1 {
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: -5px;
+        white-space: nowrap;
+    }
+
+    .html i.fa.fa-html5 {
+        color: #ff4a92;
+        font-size: 2.1rem;
+    }
+
+    .java i.fa-brands.fa-square-js {
+        color: #fff047;
+        font-size: 2.1rem;
+    }
+
+    .python i.fa-brands.fa-python {
+        color: #ffffff;
+        font-size: 2.1rem;
+    }
+
+    .box-text p {
+        font-size: 0.8rem;
+        margin-left: -15px;
+    }
+
+    .portfolio-img {
+        max-width: 480px;
+        padding-bottom: 0.4rem;
+    }
+
+    .portfolio-img img {
+        border-radius: 0.8rem;
+    }
+
+    .view-buttons {
+        margin-left: 2px;
+        margin-top: -4px;
+    }
+
+    .youtube {
+        margin-left: 0.8rem;
+    }
+
+    .span-view{
+        font-size: 0.8rem;
+        font-weight: 300;
+        margin-left: 0.2rem;
+    }
+
+    .github-button a i.fa-brands.fa-square-github {
+        font-size: 0.94rem;
+    }
+    .youtube-button a i.fa-brands.fa-youtube{
+        font-size: 1.16rem;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .home {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .portfolio {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .portfolio-title {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .portfolio-title h1 {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        gap: 2rem;
+        top: 520px;
+    }
+
+    .portxfolio-box {
+        ma-width: 290x;
+        margin-top: 8px;
+    }
+
+    .button-type {
+        margin-left: 6rem;
+        margin-top: 0.5rem;
+    }
+
+    .button-type1 {
+        margin-left: 7.5rem;
+        margin-top: 0.5rem;
+    }
+
+
+    .box-title h1 {
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: -5px;
+        white-space: nowrap;
+    }
+
+    .html i.fa.fa-html5 {
+        color: #ff4a92;
+        font-size: 1.4rem;
+    }
+
+    .java i.fa-brands.fa-square-js {
+        color: #fff047;
+        font-size: 1.4rem;
+    }
+
+    .python i.fa-brands.fa-python {
+        color: #ffffff;
+        font-size: 1.4rem;
+    }
+
+    .box-text {
+        max-width: 290px;
+    }
+
+    .box-text p {
+        font-size: 0.7rem;
+    }
+
+    .portfolio-img {
+        max-width: 290px;
+    }
+
+    .youtube {
+        margin-left: 0.8rem;
+    }
+
+    .span-view{
+        font-size: 0.8rem;
+        font-weight: 300;
+        margin-left: 0.2rem;
+    }
+
+    .github-button a i.fa-brands.fa-square-github {
+        font-size: 0.94rem;
+    }
+    .youtube-button a i.fa-brands.fa-youtube{
+        font-size: 1.16rem;
+    }
+  }
+
+  @media only screen and (max-height: 780px) {
+
+    .container-image {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .hello{
+        padding-bottom: 1rem;
+    }
+
+    .social-media {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+  }
+
+
+
